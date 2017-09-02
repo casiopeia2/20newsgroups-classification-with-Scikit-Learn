@@ -25,8 +25,8 @@ Testing performance of MultinomialNB:
     pred = clf.predict(tfidf_test)
     score = accuracy_score(twenty_test.target, pred)
     print("Accuracy:   %0.3f" % score)
-    ps_macro = precision_score(twenty_test.target, pred, average='macro')
-    print("Macro Precision:   %0.3f" % ps_macro)
+    f1 = f1_score(twenty_test.target, pred, average='macro')
+    print("F-1 Score:   %0.3f" % f1)
   </code>
 </pre>
 Result:
